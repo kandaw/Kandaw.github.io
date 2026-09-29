@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MarketPulse — live crypto and forex market data, simple analysis and trading education.">
+<title>MarketPulse — Live Crypto & Forex Analysis</title>
+<style>
+:root{--bg:#071019;--panel:#0d1823;--panel2:#111f2d;--text:#edf5fb;--muted:#8ea2b5;--line:#1b3040;--green:#20d39a;--red:#ff5d73;--gold:#f3c85b;--blue:#54a8ff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 80% 0%,#12304733,transparent 35%),var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif}button{font:inherit}.wrap{max-width:1180px;margin:auto;padding:0 22px}.top{border-bottom:1px solid var(--line);background:rgba(7,16,25,.94);position:sticky;top:0;z-index:5;backdrop-filter:blur(12px)}.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:20px}.logo{width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--green),var(--blue));display:grid;place-items:center;color:#03131a;font-weight:950}.links{display:flex;gap:25px;color:var(--muted);font-size:14px}.links a{color:inherit;text-decoration:none}.links a:hover{color:white}.btn{border:1px solid #274355;background:#122333;color:white;border-radius:10px;padding:10px 15px;cursor:pointer}.primary{background:var(--green);color:#03131a;border:0;font-weight:800}.hero{padding:76px 0 50px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}.eyebrow{color:var(--green);font-weight:750;letter-spacing:.08em;text-transform:uppercase;font-size:12px}.hero h1{font-size:clamp(42px,6vw,72px);line-height:.98;margin:13px 0 20px;letter-spacing:-.055em}.hero p{font-size:17px;line-height:1.65;color:var(--muted);max-width:650px}.actions{display:flex;gap:12px;margin-top:28px}.market-card{background:linear-gradient(145deg,#0e1c29,#09141e);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 20px 70px #0005}.quote{display:flex;justify-content:space-between;align-items:center}.quote strong{font-size:24px}.up{color:var(--green)}.down{color:var(--red)}.neutral{color:var(--muted)}.status{font-size:11px;color:var(--muted);margin-top:9px}.status-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--green);margin-right:6px}.chart{height:210px;position:relative;overflow:hidden;margin-top:18px;border-radius:14px;background:linear-gradient(#ffffff05 1px,transparent 1px),linear-gradient(90deg,#ffffff05 1px,transparent 1px);background-size:100% 42px,55px 100%}.chart svg{width:100%;height:100%}.chart-line{fill:none;stroke:var(--green);stroke-width:4}.chart-line2{fill:none;stroke:var(--blue);stroke-width:2;opacity:.55}section{padding:30px 0 55px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:18px}.section-head h2{font-size:28px;margin:0}.section-head span{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.tile{background:var(--panel);border:1px solid var(--line);border-radius:15px;padding:17px}.tile small{color:var(--muted)}.tile .row{display:flex;justify-content:space-between;gap:8px;margin-top:10px}.price{font-size:21px;font-weight:800}.sub{font-size:12px;color:var(--muted);margin-top:8px}.tabs{display:flex;gap:8px;margin-bottom:15px}.tab{background:transparent;color:var(--muted);border:1px solid var(--line);padding:8px 13px;border-radius:999px;cursor:pointer}.tab.active{background:#153040;color:white;border-color:#2d566d}.articles{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:15px}.article{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:20px;min-height:190px}.article.featured{background:linear-gradient(150deg,#122b38,#0d1823)}.tag{font-size:11px;color:var(--gold);text-transform:uppercase;font-weight:800}.article h3{font-size:20px;line-height:1.25;margin:10px 0}.article p{color:var(--muted);line-height:1.55;font-size:13px}.read{color:var(--green);font-size:13px;font-weight:700}.newsletter{border:1px solid #234355;background:linear-gradient(110deg,#0d202b,#0c1721);border-radius:20px;padding:30px;display:flex;justify-content:space-between;gap:25px;align-items:center}.newsletter h2{margin:0 0 8px}.newsletter p{color:var(--muted);margin:0}.form{display:flex;gap:8px}.form input{background:#07131d;border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:white;min-width:230px}footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:12px}.disclaimer{line-height:1.6;max-width:900px}.source{font-size:11px;color:var(--muted);margin-top:8px}.source a{color:var(--blue)}.error{color:var(--gold)}
+@media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:52px}.grid{grid-template-columns:1fr 1fr}.articles{grid-template-columns:1fr}.newsletter{display:block}.form{margin-top:20px}.form input{width:100%;min-width:0}}
+@media(max-width:520px){.wrap{padding:0 15px}.hero h1{font-size:44px}.grid{grid-template-columns:1fr}.actions{flex-direction:column}.actions .btn{text-align:center}.form{flex-direction:column}.quote{align-items:flex-start;gap:10px;flex-direction:column}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap nav"><div class="brand"><div class="logo">M</div>MarketPulse</div><nav class="links"><a href="#markets">Markets</a><a href="#analysis">Analysis</a><a href="#learn">Learn</a><a href="#about">About</a></nav><button class="btn" onclick="scrollToId('analysis')">Explore Analysis</button></div></header>
+<main><div class="wrap">
+<section class="hero">
+<div><div class="eyebrow">Live Crypto • Forex • Macro</div><h1>Markets, explained without the noise.</h1><p>Live market snapshots, simple technical context and educational breakdowns for crypto and Forex traders. Prices refresh automatically in your browser.</p><div class="actions"><button class="btn primary" onclick="scrollToId('markets')">View Live Markets</button><button class="btn" onclick="scrollToId('analysis')">Read Analysis</button></div><div class="status" id="lastUpdate"><span class="status-dot"></span>Connecting to market data…</div></div>
+<div class="market-card"><div class="quote"><div><small style="color:var(--muted)">BTC / USD</small><div><strong id="heroBtc">Loading…</strong> <span id="heroBtcChange" class="neutral">—</span></div></div><span class="tag">LIVE DATA</span></div><div class="chart"><svg viewBox="0 0 600 210" preserveAspectRatio="none"><polyline class="chart-line" points="0,160 35,150 70,168 105,130 140,145 175,115 210,130 245,82 280,100 315,76 350,94 385,65 420,80 455,45 490,62 525,35 560,50 600,20"/><polyline class="chart-line2" points="0,185 75,172 150,180 225,145 300,150 375,125 450,120 525,92 600,70"/></svg></div><div class="source">Crypto data: CoinGecko. Refresh interval: 60 seconds.</div></div>
+</section>
+
+<section id="markets"><div class="section-head"><h2>Live market snapshot</h2><span id="marketStatus">Loading live prices…</span></div><div class="grid">
+<div class="tile"><small>Bitcoin</small><div class="row"><span class="price" id="btcPrice">Loading…</span><span id="btcChange" class="neutral">—</span></div><div class="sub" id="btcMeta">Market cap: —</div></div>
+<div class="tile"><small>Ethereum</small><div class="row"><span class="price" id="ethPrice">Loading…</span><span id="ethChange" class="neutral">—</span></div><div class="sub" id="ethMeta">Market cap: —</div></div>
+<div class="tile"><small>EUR/USD</small><div class="row"><span class="price" id="eurusd">Loading…</span><span class="neutral">ECB rate</span></div><div class="sub" id="fxDate">Updated: —</div></div>
+<div class="tile"><small>GBP/USD</small><div class="row"><span class="price" id="gbpusd">Loading…</span><span class="neutral">ECB rate</span></div><div class="sub" id="gbpDate">Updated: —</div></div>
+</div><div class="source">Crypto: <a href="https://www.coingecko.com/" target="_blank" rel="noopener">CoinGecko</a> • FX: <a href="https://www.frankfurter.app/" target="_blank" rel="noopener">Frankfurter / ECB reference rates</a></div></section>
+
+<section id="analysis"><div class="section-head"><h2>Latest analysis</h2><span>Educational market context</span></div><div class="tabs"><button class="tab active" onclick="filter('all',this)">All</button><button class="tab" onclick="filter('crypto',this)">Crypto</button><button class="tab" onclick="filter('forex',this)">Forex</button><button class="tab" onclick="filter('macro',this)">Macro</button></div><div class="articles">
+<article class="article featured" data-cat="crypto"><span class="tag">Crypto</span><h3>Bitcoin structure: what traders should watch around key support and resistance</h3><p id="btcAnalysis">Live price context will appear here after the market feed loads. The page does not promise a future price direction.</p><span class="read">Educational breakdown →</span></article>
+<article class="article" data-cat="forex"><span class="tag">Forex</span><h3>EUR/USD: mapping the current decision zone</h3><p>Use the latest reference rate as a starting point, then study trend, volatility and major economic events before making any decision.</p><span class="read">Educational breakdown →</span></article>
+<article class="article" data-cat="macro"><span class="tag">Macro</span><h3>Why interest rates matter for risk assets</h3><p>Interest rates can affect currencies, liquidity and investor risk appetite. This page explains concepts rather than providing guaranteed trade calls.</p><span class="read">Educational breakdown →</span></article>
+</div></section>
+
+<section id="learn"><div class="section-head"><h2>Learn trading concepts</h2><span>Simple explanations</span></div><div class="grid"><div class="tile"><b>Support & resistance</b><p style="color:var(--muted);font-size:13px;line-height:1.5">Understand areas where price has historically reacted.</p></div><div class="tile"><b>Risk management</b><p style="color:var(--muted);font-size:13px;line-height:1.5">Position sizing, invalidation and risk-to-reward basics.</p></div><div class="tile"><b>Market structure</b><p style="color:var(--muted);font-size:13px;line-height:1.5">Read higher highs, lower lows and potential regime changes.</p></div><div class="tile"><b>Economic calendar</b><p style="color:var(--muted);font-size:13px;line-height:1.5">Learn why major economic releases can move FX and crypto.</p></div></div></section>
+
+<section id="about"><div class="newsletter"><div><h2>MarketPulse</h2><p>Live data + clear explanations, built for learning.</p></div><div><button class="btn primary" onclick="scrollToId('markets')">Check Markets</button></div></div></section>
+</div></main>
+<footer><div class="wrap"><div class="disclaimer"><b>Disclaimer:</b> Market data is provided for informational and educational purposes. Prices and reference rates can be delayed or unavailable, and free data providers have usage limits. Nothing on MarketPulse is financial advice or a guarantee of future results. Always verify important prices with your exchange or broker before acting.</div><div class="source" id="footerStatus">MarketPulse • Live feed status: connecting…</div></div></footer>
+<script>
+const CG='https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd&include_market_cap=true&include_24hr_change=true&include_last_updated_at=true';
+const FX='https://api.frankfurter.app/latest?from=EUR&to=USD,GBP';
+const fmtUSD=n=>n==null?'—':new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:n>=1000?0:2}).format(n);
+const fmtPct=n=>n==null?'—':`${n>=0?'+':''}${Number(n).toFixed(2)}%`;
+function setChange(el,n){el.textContent=fmtPct(n);el.className=n>0?'up':n<0?'down':'neutral'}
+function setText(id,v){const e=document.getElementById(id);if(e)e.textContent=v}
+async function loadMarkets(){
+  const started=Date.now();
+  try{
+    const [cr,fx]=await Promise.all([fetch(CG,{cache:'no-store'}),fetch(FX,{cache:'no-store'})]);
+    if(!cr.ok) throw new Error('Crypto feed unavailable');
+    if(!fx.ok) throw new Error('FX feed unavailable');
+    const c=await cr.json(), f=await fx.json();
+    const btc=c.bitcoin||{}, eth=c.ethereum||{};
+    setText('btcPrice',fmtUSD(btc.usd)); setChange(document.getElementById('btcChange'),btc.usd_24h_change); setText('btcMeta','Market cap: '+fmtUSD(btc.usd_market_cap));
+    setText('ethPrice',fmtUSD(eth.usd)); setChange(document.getElementById('ethChange'),eth.usd_24h_change); setText('ethMeta','Market cap: '+fmtUSD(eth.usd_market_cap));
+    setText('heroBtc',fmtUSD(btc.usd)); setChange(document.getElementById('heroBtcChange'),btc.usd_24h_change);
+    const eurusd=f.rates?.USD, eurgbp=f.rates?.GBP; const gbpusd=eurusd&&eurgbp?eurusd/eurgbp:null;
+    setText('eurusd',eurusd?Number(eurusd).toFixed(4):'—'); setText('gbpusd',gbpusd?Number(gbpusd).toFixed(4):'—');
+    setText('fxDate','Updated: '+(f.date||'today')); setText('gbpDate','Updated: '+(f.date||'today'));
+    const now=new Date(); const time=now.toLocaleTimeString([], {hour:'2-digit',minute:'2-digit'});
+    setText('lastUpdate','Live data connected • updated '+time); setText('marketStatus','Live • refreshed in 60s'); setText('footerStatus','MarketPulse • Live feed connected • Last update '+time);
+    if(btc.usd_24h_change!=null){
+      const direction=btc.usd_24h_change>0?'up':btc.usd_24h_change<0?'down':'flat';
+      setText('btcAnalysis',`BTC is ${direction} ${fmtPct(btc.usd_24h_change)} over the last 24 hours. Use this as market context—not as a prediction. Confirm trend and risk levels on your preferred chart before making any decision.`);
+    }
+  }catch(err){
+    setText('marketStatus','Live feed temporarily unavailable'); setText('lastUpdate','Market data connection failed — retrying automatically'); setText('footerStatus','MarketPulse • Feed unavailable • Retrying automatically');
+    console.warn(err);
+  }
+  return Date.now()-started;
+}
+function scrollToId(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
+function filter(cat,btn){document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));btn.classList.add('active');document.querySelectorAll('.article').forEach(a=>{a.style.display=cat==='all'||a.dataset.cat===cat?'block':'none'})}
+loadMarkets(); setInterval(loadMarkets,60000);
+</script>
+</body></html>
